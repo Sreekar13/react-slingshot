@@ -22,6 +22,7 @@ jobs:
       - checkout
       - restore_cache:
           key: node-modules
+      - run: npm update
       - run: npm run test
   
   analyze:
@@ -30,6 +31,7 @@ jobs:
       - checkout
       - restore_cache:
           key: node-modules
+      - run: npm update
       - run: npm audit
       - run: 
           name: This is to show the fail log of analyze
