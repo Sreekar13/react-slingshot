@@ -9,7 +9,7 @@ jobs:
     <<: *node_exec
     steps:
       - checkout
-      - run: npm run install
+      - run: npm run build
       - run: npm run lint
       - save_cache: 
           key: node-modules
