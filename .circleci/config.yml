@@ -10,7 +10,6 @@ jobs:
     steps:
       - checkout
       - run: npm update
-      - run: npm run build
       - run: npm run lint
       - save_cache: 
           key: node-modules
